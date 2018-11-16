@@ -15,3 +15,14 @@ available options are:
 * sitename
 * phone
 * email
+
+Development
+-----------
+
+Bump the version number in `setup.py`, then:
+
+```
+$ rm -rf dist/
+$ python setup.py sdist bdist_wheel
+$ twine upload dist/*
+```
