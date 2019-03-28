@@ -2,6 +2,10 @@ from setuptools import setup
 
 setup(
     name="sphinx-au-theme",
+    version="0.2.0",
+    author="Dan Søndergaard",
+    author_email="das@birc.au.dk",
+    description="Sphinx theme emulating pages from Aarhus University, Denmark.",
     entry_points={
         "sphinx.html_themes": [
             "au = sphinx_au_theme",
