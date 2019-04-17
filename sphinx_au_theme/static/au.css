@@ -928,35 +928,32 @@ body{
    font-size:12pt;
 }
 div.admonition{
-   border:none;
-   padding:15px;
-   margin-bottom:15px;
-   margin-top:15px;
-   font-family:inherit;
-   color:white;
+    border:none;
+    padding:1rem 1rem 1rem 2rem;
+    margin-bottom:2rem;
+    margin-top:2rem;
+    font-family:inherit;
+ }
+ div.admonition a{
+    color:inherit;
+ }
+.admonition p {
+    margin-bottom: 0;
 }
-.admonition p.last{
-   display:inline;
-}
-div.admonition a{
-   color:white;
-}
-div.admonition > p.first.admonition-title{
-   font-weight:bold;
-   display:inline;
-   margin-right:15px;
+.admonition-title {
+    font-weight: bold;
 }
 div.note{
-   background:#37a0cb;
+    border-left: 4px solid rgba(55, 160, 203, 1) !important;
+    background: rgba(55, 160, 203, 0.1);
 }
 div.warning{
-   background:#ee7f00;
+    border-left: 4px solid rgba(238, 127, 0, 1) !important;
+    background: rgba(238, 127, 0, 0.1);
 }
 div.seealso{
-   background:#00aba4;
-}
-div.admonition-ipsych{
-   background:#5f0030;
+    border-left: 4px solid rgba(0, 171, 164, 1) !important;
+    background: rgba(0, 171, 164, 0.1);
 }
 a.headerlink:link,a.headerlink:visited{
    color:#ccc!important;
