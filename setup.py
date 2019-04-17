@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="sphinx-au-theme",
-    version="0.3.0",
+    version="0.4.0",
     author="Dan Søndergaard",
     author_email="das@birc.au.dk",
     description="Sphinx theme emulating pages from Aarhus University, Denmark.",
@@ -17,7 +17,6 @@ setup(
         'theme.conf',
         '*.html',
         'static/css/*.css',
-        'static/js/*.js',
         'static/favicon.ico',
         'static/font/*.*'
     ]},
