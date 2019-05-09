@@ -2,7 +2,12 @@
     <link rel="stylesheet" href="{{ pathto('_static/au.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
     {%- for css in css_files %}
-        <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+    {%- endfor %}
+{%- endmacro %}
+{%- macro script() %}
+    {%- for js in script_files %}
+    {{ js_tag(js) }}
     {%- endfor %}
 {%- endmacro %}
 
@@ -17,6 +22,10 @@
     {%- block css %}
     {{- css() }}
     {%- endblock %}
+    {%- block scripts %}
+    {{- script() }}
+    {%- endblock %}
+
     <link href="{{ pathto('_static/favicon.ico', 1) }}" rel="shortcut icon" /><meta content="AU normal contrast" http-equiv="Default-Style" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="si_pid" content="559" />
 </head>
 <body class="department layout15">

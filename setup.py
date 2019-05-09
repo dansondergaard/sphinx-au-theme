@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="sphinx-au-theme",
-    version="0.4.0",
+    version="0.5.0",
     author="Dan Søndergaard",
     author_email="das@birc.au.dk",
     description="Sphinx theme emulating pages from Aarhus University, Denmark.",
