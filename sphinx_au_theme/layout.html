@@ -53,7 +53,7 @@
 
         <div id="fade"></div>
     </header>
-
+    {% if theme_show_breadcrumb == "yes" %}
     <div class="row breadcrumb align-right">
         <div class="columns medium-12">
             {%- if next %}
@@ -61,6 +61,7 @@
             {% endif %}
         </div>
     </div>
+    {% endif %}
 
     <div class="row">
         <nav class="small-12 large-3 medium-4 columns pagenav left-menu align-top">
